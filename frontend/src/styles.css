@@ -1,0 +1,268 @@
+ /* Global Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Glassmorphic Form Container */
+  .container {
+    background: rgba(20, 20, 30, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Logo Section */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .logo img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Form Heading */
+  h2 {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .input-group input::placeholder {
+    color: #b0b0b0;
+  }
+  
+  /* Input Field Icons */
+  .input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b0b0b0;
+    font-size: 14px;
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    font-size: 12px;
+    color: #a3a3ff;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #4f5bd5, #2a9df4);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #3b4cc0, #1a7fd8);
+  }
+  
+  /* Signup Link */
+  .signup-link {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 10px;
+  }
+  
+  .signup-link a {
+    color: #a3a3ff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Notification Toast */
+  .toast {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .toast i {
+    color: green;
+  }
+  
+  .toast.success {
+    border-left: 5px solid green;
+  }
+  
+  
+  
+  
+  /* Home Page Styles */
+  .home-container {
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Profile Button */
+  .profile-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Content */
+  .content {
+    margin-top: 50px;
+  }
+  
+  .robot {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  /* Text Styling */
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Get Started Button */
+  .start-btn {
+    background: none;
+    border: 2px solid black;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: black;
+  }
+  
+  .start-btn:hover {
+    background: black;
+    color: white;
+  }
+  
