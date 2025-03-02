@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #0a0a0a, #1b013f);
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .sidebar ul li:hover,
+  .sidebar ul .active {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .logout-btn {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Expense Form */
+  .expense-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .expense-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .add-btn {
+    background: linear-gradient(90deg, #8a6cff, #5c4ae6);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(138, 108, 255, 0.6);
+  }
+  
+  /* Expenses Table */
+  .expenses-table {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .expenses-table h3 {
+    margin-bottom: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  table th {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .delete-btn {
+    background: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background: darkred;
+  }
+  
+.total-row {
+    background: rgba(255, 255, 255, 0.1); /* Slight contrast */
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .total-expense-cell {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+  }
+  

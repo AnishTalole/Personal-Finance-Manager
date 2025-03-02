@@ -4,32 +4,52 @@ import "../styles.css";
 
 const Home = () => {
   const navigate = useNavigate();
-  const user = "User"; 
 
   return (
     <div className="home-container">
-      {/* Navigation Bar */}
       <header className="navbar">
         <div className="logo">
-          <img src="logo.png" alt="Logo" className="logo-img" />
-          <h1>auth</h1>
+          <h1>Finance Manager</h1>
         </div>
-        <button className="profile-btn">P</button>
+        <button className="primary-btn" onClick={() => navigate("/login")}>
+          Login
+        </button>
       </header>
 
-      {/* Content Section */}
-      <div className="content">
-        <img src="robot.png" alt="Welcome" className="robot" />
-        <h3>Hey {user}! 👋</h3>
-        <h1>Welcome to our app</h1>
-        <p>
-          Let's start with a quick product tour and we will have you up and
-          running in no time!
-        </p>
-        <button className="start-btn" onClick={() => navigate("/register")}>
-          Get Started
-        </button>
+      <div className="hero-section">
+        <h1>
+          Unlocking the <span>Power</span> of Your Finances
+        </h1>
+        <p>Manage your expenses effortlessly with our smart finance tracker.</p>
+
+        <div className="buttons">
+          <button className="primary-btn" onClick={() => navigate("/register")}>
+            Get Started
+          </button>
+          <button className="secondary-btn" onClick={() => navigate("/Learnmore")}>
+            Learn More
+          </button>
+        </div>
       </div>
+
+      <div className="info-cards">
+        <div className="card">
+          <h2>100+</h2>
+          <p>🚀 New users exploring smarter financial management</p>
+        </div>
+        <div className="card highlight">
+          <h2>₹0 fees</h2>
+          <p>💰 Completely free to track and manage your expenses</p>
+        </div>
+        <div className="card">
+          <h2>Secure & Private</h2>
+          <p>🔒 Your data is encrypted and safe with us</p>
+        </div>
+      </div>
+
+      <footer className="footer">
+        Designed & Developed by <strong>Anish Talole</strong>
+      </footer>
     </div>
   );
 };
