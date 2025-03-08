@@ -1,0 +1,104 @@
+/* Set Budget Container */
+.set-budget-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Budget Input Card */
+  .budget-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .budget-card h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .budget-card input,
+  .budget-card select,
+  .budget-card button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+  }
+  option{
+    background-color: #291F38;
+  }
+  
+  .budget-card input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .budget-card select {
+    cursor: pointer;
+  }
+  
+  .budget-card button {
+    background: linear-gradient(90deg, #8a6cff, #5c4ae6);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .budget-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(138, 108, 255, 0.6);
+  }
+  
+  /* Budget History Section */
+  .budget-history {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Each Budget Section */
+  .budget-section {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  .budget-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Budget List (Card Style) */
+  .budget-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .budget-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+  }
+  
